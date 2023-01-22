@@ -1,0 +1,382 @@
+{
+  "version": "1.0",
+  "engine": "darwin|Transformer|1.39.0|latest|latest",
+  "containerized": false,
+  "host_distro": {
+    "name": "",
+    "version": "",
+    "display_name": "other"
+  },
+  "type": "build",
+  "state": "error",
+  "target_reference": "berstearns/dit-dla",
+  "system": {
+    "type": "",
+    "release": "",
+    "distro": {
+      "name": "",
+      "version": "",
+      "display_name": ""
+    }
+  },
+  "source_image": {
+    "identity": {
+      "id": ""
+    },
+    "size": 0,
+    "size_human": "",
+    "create_time": "",
+    "docker_version": "",
+    "architecture": "",
+    "container_entry": {
+      "exe_path": ""
+    }
+  },
+  "minified_image_size": 0,
+  "minified_image_size_human": "",
+  "minified_image": "",
+  "minified_image_has_data": false,
+  "minified_by": 0,
+  "artifact_location": "",
+  "container_report_name": "",
+  "seccomp_profile_name": "",
+  "apparmor_profile_name": "",
+  "image_stack": [
+    {
+      "is_top_image": true,
+      "id": "sha256:96951332f4039f22a86baf84ea62f16dec5cf9f528203ea903c1315648ac2ce4",
+      "full_name": "berstearns/dit-dla:latest",
+      "repo_name": "berstearns/dit-dla",
+      "version_tag": "latest",
+      "raw_tags": [
+        "berstearns/dit-dla:latest",
+        "dit-dla:latest"
+      ],
+      "create_time": "2023-01-02T01:19:21Z",
+      "new_size": 2480931951,
+      "new_size_human": "2.5 GB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2022-12-21T01:40:02Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 63459264,
+          "size_human": "64 MB",
+          "params": "file:51788132818f0e1cbed57cd022358b0564ec0d9cab6d33e5ef53902645d53c98 in /",
+          "command_snippet": "ADD file:51788132818f0e1cbed57cd022358b0564e...",
+          "command_all": "ADD file:51788132818f0e1cbed57cd022358b0564ec0d9cab6d33e5ef53902645d53c98 /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "CMD",
+          "time": "2022-12-21T01:40:02Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"bash\"]\n",
+          "command_snippet": "CMD [\"bash\"]\n",
+          "command_all": "CMD [\"bash\"]\n"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-12-21T09:12:54Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "command_snippet": "ENV PATH=/usr/local/bin:/usr/local/sbin:/usr...",
+          "command_all": "ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-12-21T09:12:54Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "LANG=C.UTF-8",
+          "command_snippet": "ENV LANG=C.UTF-8",
+          "command_all": "ENV LANG=C.UTF-8"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-12-21T09:12:59Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 6664753,
+          "size_human": "6.7 MB",
+          "command_snippet": "RUN set -eux; \tapt-get update; \tapt-get inst...",
+          "command_all": "RUN set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tnetbase \t\ttzdata \t; \trm -rf /var/lib/apt/lists/*",
+          "system_commands": [
+            "set -eux",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends ca-certificates netbase tzdata",
+            "rm -rf /var/lib/apt/lists/*"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-12-21T11:11:38Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568",
+          "command_snippet": "ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E3...",
+          "command_all": "ENV GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-12-21T11:11:38Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_VERSION=3.9.16",
+          "command_snippet": "ENV PYTHON_VERSION=3.9.16",
+          "command_all": "ENV PYTHON_VERSION=3.9.16"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-12-21T11:16:35Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 29037079,
+          "size_human": "29 MB",
+          "command_snippet": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark sho...",
+          "command_all": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tdpkg-dev \t\tgcc \t\tgnupg dirmngr \t\tlibbluetooth-dev \t\tlibbz2-dev \t\tlibc6-dev \t\tlibexpat1-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tliblzma-dev \t\tlibncursesw5-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tmake \t\ttk-dev \t\tuuid-dev \t\twget \t\txz-utils \t\tzlib1g-dev \t; \t\twget -O python.tar.xz \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\"; \twget -O python.tar.xz.asc \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\"; \tGNUPGHOME=\"$(mktemp -d)\"; export GNUPGHOME; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$GPG_KEY\"; \tgpg --batch --verify python.tar.xz.asc python.tar.xz; \tcommand -v gpgconf > /dev/null && \\\n\tgpgconf --kill all || :; \trm -rf \"$GNUPGHOME\" python.tar.xz.asc; \tmkdir -p /usr/src/python; \ttar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; \trm python.tar.xz; \t\tcd /usr/src/python; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \t./configure \t\t--build=\"$gnuArch\" \t\t--enable-loadable-sqlite-extensions \t\t--enable-optimizations \t\t--enable-option-checking=fatal \t\t--enable-shared \t\t--with-system-expat \t\t--without-ensurepip \t; \tnproc=\"$(nproc)\"; \tmake -j \"$nproc\" \t\tLDFLAGS=\"-Wl,--strip-all\" \t; \tmake install; \t\tcd /; \trm -rf /usr/src/python; \t\tfind /usr/local -depth \t\t\\( \t\t\t\\( -type d -a \\( -name test -o -name tests -o -name idle_test \\) \\) \t\t\t-o \\( -type f -a \\( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \\) \\) \t\t\\) -exec rm -rf '{}' + \t; \t\tldconfig; \t\tapt-mark auto '.*' > /dev/null; \tapt-mark manual $savedAptMark; \tfind /usr/local -type f -executable -not \\( -name '*tkinter*' \\) -exec ldd '{}' ';' \t\t| awk '/=>/ { print $(NF-1) }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual \t; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \trm -rf /var/lib/apt/lists/*; \t\tpython3 --version",
+          "system_commands": [
+            "set -eux; savedAptMark=\"$(apt-mark showmanual)\"; apt-get update; apt-get install -y --no-install-recommends dpkg-dev gcc gnupg dirmngr libbluetooth-dev libbz2-dev libc6-dev libexpat1-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libreadline-dev libsqlite3-dev libssl-dev make tk-dev uuid-dev wget xz-utils zlib1g-dev ; wget -O python.tar.xz \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\"; wget -O python.tar.xz.asc \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\"; GNUPGHOME=\"$(mktemp -d)\"; export GNUPGHOME; gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$GPG_KEY\"; gpg --batch --verify python.tar.xz.asc python.tar.xz; command -v gpgconf > /dev/null",
+            "gpgconf --kill all || :; rm -rf \"$GNUPGHOME\" python.tar.xz.asc; mkdir -p /usr/src/python; tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; rm python.tar.xz; cd /usr/src/python; gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; ./configure --build=\"$gnuArch\" --enable-loadable-sqlite-extensions --enable-optimizations --enable-option-checking=fatal --enable-shared --with-system-expat --without-ensurepip ; nproc=\"$(nproc)\"; make -j \"$nproc\" LDFLAGS=\"-Wl,--strip-all\" ; make install; cd /; rm -rf /usr/src/python; find /usr/local -depth ( ( -type d -a ( -name test -o -name tests -o -name idle_test ) ) -o ( -type f -a ( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' ) ) ) -exec rm -rf '{}' + ; ldconfig; apt-mark auto '.*' > /dev/null; apt-mark manual $savedAptMark; find /usr/local -type f -executable -not ( -name '*tkinter*' ) -exec ldd '{}' ';' | awk '/=>/ { print $(NF-1) }' | sort -u | xargs -r dpkg-query --search | cut -d: -f1 | sort -u | xargs -r apt-mark manual ; apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; rm -rf /var/lib/apt/lists/*; python3 --version"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2022-12-21T11:16:35Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 32,
+          "size_human": "32 B",
+          "command_snippet": "RUN set -eux; \tfor src in idle3 pydoc3 pytho...",
+          "command_all": "RUN set -eux; \tfor src in idle3 pydoc3 python3 python3-config; do \t\tdst=\"$(echo \"$src\" | tr -d 3)\"; \t\t[ -s \"/usr/local/bin/$src\" ]; \t\t[ ! -e \"/usr/local/bin/$dst\" ]; \t\tln -svT \"$src\" \"/usr/local/bin/$dst\"; \tdone",
+          "system_commands": [
+            "set -eux",
+            "for src in idle3 pydoc3 python3 python3-config",
+            "do dst=\"$(echo \"$src\" | tr -d 3)\"",
+            "[ -s \"/usr/local/bin/$src\" ]",
+            "[ ! -e \"/usr/local/bin/$dst\" ]",
+            "ln -svT \"$src\" \"/usr/local/bin/$dst\"",
+            "done"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-12-21T11:16:35Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_PIP_VERSION=22.0.4",
+          "command_snippet": "ENV PYTHON_PIP_VERSION=22.0.4",
+          "command_all": "ENV PYTHON_PIP_VERSION=22.0.4"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-12-21T11:16:36Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_SETUPTOOLS_VERSION=58.1.0",
+          "command_snippet": "ENV PYTHON_SETUPTOOLS_VERSION=58.1.0",
+          "command_all": "ENV PYTHON_SETUPTOOLS_VERSION=58.1.0"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-12-21T11:16:36Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py",
+          "command_snippet": "ENV PYTHON_GET_PIP_URL=https://github.com/py...",
+          "command_all": "ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/66030fa03382b4914d4c4d0896961a0bdeeeb274/public/get-pip.py"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-12-21T11:16:36Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6",
+          "command_snippet": "ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb...",
+          "command_all": "ENV PYTHON_GET_PIP_SHA256=1e501cf004eac1b7eb1f97266d28f995ae835d30250bec7f8850562703067dc6"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-12-21T11:16:46Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 11354674,
+          "size_human": "11 MB",
+          "command_snippet": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark sho...",
+          "command_all": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends wget; \t\twget -O get-pip.py \"$PYTHON_GET_PIP_URL\"; \techo \"$PYTHON_GET_PIP_SHA256 *get-pip.py\" | sha256sum -c -; \t\tapt-mark auto '.*' > /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \trm -rf /var/lib/apt/lists/*; \t\texport PYTHONDONTWRITEBYTECODE=1; \t\tpython get-pip.py \t\t--disable-pip-version-check \t\t--no-cache-dir \t\t--no-compile \t\t\"pip==$PYTHON_PIP_VERSION\" \t\t\"setuptools==$PYTHON_SETUPTOOLS_VERSION\" \t; \trm -f get-pip.py; \t\tpip --version",
+          "system_commands": [
+            "set -eux",
+            "savedAptMark=\"$(apt-mark showmanual)\"",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends wget",
+            "wget -O get-pip.py \"$PYTHON_GET_PIP_URL\"",
+            "echo \"$PYTHON_GET_PIP_SHA256 *get-pip.py\" | sha256sum -c -",
+            "apt-mark auto '.*' > /dev/null",
+            "[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null",
+            "apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false",
+            "rm -rf /var/lib/apt/lists/*",
+            "export PYTHONDONTWRITEBYTECODE=1",
+            "python get-pip.py --disable-pip-version-check --no-cache-dir --no-compile \"pip==$PYTHON_PIP_VERSION\" \"setuptools==$PYTHON_SETUPTOOLS_VERSION\"",
+            "rm -f get-pip.py",
+            "pip --version"
+          ]
+        },
+        {
+          "type": "CMD",
+          "time": "2022-12-21T11:16:46Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"python3\"]\n",
+          "command_snippet": "CMD [\"python3\"]\n",
+          "command_all": "CMD [\"python3\"]\n"
+        },
+        {
+          "type": "RUN",
+          "time": "2023-01-01T14:06:33Z",
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 17461845,
+          "size_human": "18 MB",
+          "command_snippet": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"apt-get\",\"update\"...",
+          "command_all": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"apt-get\",\"update\",\"-y\"]",
+          "system_commands": [
+            "[\"RUN\",\"/bin/sh\",\"-c\",\"apt-get\",\"update\",\"-y\"]"
+          ],
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "type": "RUN",
+          "time": "2023-01-01T14:17:54Z",
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 449013187,
+          "size_human": "449 MB",
+          "command_snippet": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"apt-get\",\"install...",
+          "command_all": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"apt-get\",\"install\",\"ffmpeg\",\"libsm6\",\"libxext6\",\"git\",\"gcc\",\"g++\",\"-y\"]",
+          "system_commands": [
+            "[\"RUN\",\"/bin/sh\",\"-c\",\"apt-get\",\"install\",\"ffmpeg\",\"libsm6\",\"libxext6\",\"git\",\"gcc\",\"g++\",\"-y\"]"
+          ],
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "type": "RUN",
+          "time": "2023-01-01T14:17:54Z",
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "command_snippet": "RUN [\"WORKDIR\",\"/app\"]",
+          "command_all": "RUN [\"WORKDIR\",\"/app\"]",
+          "system_commands": [
+            "[\"WORKDIR\",\"/app\"]"
+          ],
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "type": "RUN",
+          "time": "2023-01-02T01:17:40Z",
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 633679602,
+          "size_human": "634 MB",
+          "command_snippet": "RUN [\"COPY\",\".\",\"/app\"]",
+          "command_all": "RUN [\"COPY\",\".\",\"/app\"]",
+          "system_commands": [
+            "[\"COPY\",\".\",\"/app\"]"
+          ],
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "type": "RUN",
+          "time": "2023-01-02T01:18:22Z",
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 922540163,
+          "size_human": "922 MB",
+          "command_snippet": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"pip\",\"install\",\"-...",
+          "command_all": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"pip\",\"install\",\"-r\",\"requirements.txt\"]",
+          "system_commands": [
+            "[\"RUN\",\"/bin/sh\",\"-c\",\"pip\",\"install\",\"-r\",\"requirements.txt\"]"
+          ],
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "type": "RUN",
+          "time": "2023-01-02T01:19:21Z",
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 347721352,
+          "size_human": "348 MB",
+          "command_snippet": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"pip\",\"install\",\"g...",
+          "command_all": "RUN [\"RUN\",\"/bin/sh\",\"-c\",\"pip\",\"install\",\"git+https://github.com/facebookresearch/detectron2.git\"]",
+          "system_commands": [
+            "[\"RUN\",\"/bin/sh\",\"-c\",\"pip\",\"install\",\"git+https://github.com/facebookresearch/detectron2.git\"]"
+          ],
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "type": "RUN",
+          "time": "2023-01-02T01:19:21Z",
+          "is_last_instruction": true,
+          "is_nop": false,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "command_snippet": "RUN [\"CMD\",\"[uvicorn\",\"api:app\",\"--port=80\",...",
+          "command_all": "RUN [\"CMD\",\"[uvicorn\",\"api:app\",\"--port=80\",\"--reload\",\"--host=0.0.0.0]\"]",
+          "system_commands": [
+            "[\"CMD\",\"[uvicorn\",\"api:app\",\"--port=80\",\"--reload\",\"--host=0.0.0.0]\"]"
+          ],
+          "comment": "buildkit.dockerfile.v0",
+          "raw_tags": [
+            "berstearns/dit-dla:latest",
+            "dit-dla:latest"
+          ]
+        }
+      ]
+    }
+  ]
+}

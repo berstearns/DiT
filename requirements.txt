@@ -1,0 +1,14 @@
+pyyaml==5.1
+torch==1.9.0
+torchvision==0.10.0
+jinja2==3.0.3
+
+flask
+gunicorn
+gradio
+numpy
+scipy
+shapely
+timm
+opencv-python
+fastapi[all]
